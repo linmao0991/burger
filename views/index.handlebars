@@ -72,8 +72,9 @@ $("#addburger").on("submit", function(event){
         data: newBurger
     }).then(function(){
         console.log("Added new burger: "+newBurger.burger);
-        $("#addburger").reset();
+        $("#addburger [name=burger]").reset();
         location.reload();
     });
+    
 })
 </script>
